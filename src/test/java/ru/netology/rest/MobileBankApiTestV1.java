@@ -46,7 +46,7 @@ class MobileBankApiTestV1 {
                   .post("/post")
                 // Проверки
                 .then()
-                .statusCode(404)
+                .statusCode(200)
                 .body("data",equalTo(" {\"field1\":\"value\",\"field2\":10}" ))
          ;
     }
